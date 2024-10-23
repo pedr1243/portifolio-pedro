@@ -18,15 +18,17 @@
             <img src="./icons/ll.svg" alt="">
             <h1><span class="logoDes">Ped</span>ro</h1>
         </div>
-        <div class="menu">
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                </li>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-        </div>
+        </nav>
+        <button>Login</button>
+        <div class="hamburguer" onclick="toggleMenu()">&#9776;</div>
     </header>
     <!-- 2°-->
     <main>
@@ -38,203 +40,16 @@
             </h2>
             <p>Sou um programador júnior apaixonado por desafios e <br>
                 por adquirir conhecimento na área da computação. <br>
-                Role para baixo e descubra mais um pouco sobre mim.</p>
-            <button id="btn-01">
-                contact us
-            </button>
+                Role para baixo e descubra mais um pouco sobre mim.
+            </p>
         </div>
-        <div class="conteudo-caixa">
-            <div class="caixa">
-                <div class="conteudo">
-                    <img src="./img/portifolio-02.jpg" alt="">
-                    <span>🚀</span>
-                    <h2>Pedro Dev <br> <span>UX/UI Desiner</span></h2>
-                    <a href="#">Contrate</a>
-                </div>
+        <div class="conteudo-secundario">
+            <div class="img">
+                <img src="#" alt="">
             </div>
-
-            <!-- <img src="../assets/icons/email (2).svg" alt=""> -->
         </div>
     </main>
-    <!-- 3°-->
-    <aside>
-        <!-- about me -->
-        <div class="container-about">
-            <h1>About Me</h1>
-            <div class="container-box">
-                <div class="box-about">
-                    <img src="../assets/img/portifolio-02.jpg" alt="">
-                </div>
-                <div class="box-about02">
-                    <div class="titulo">
-                        <h2>Sobre mim</h2>
-                        <h3>Front-end Developer</h3>
-                    </div>
-                    <div class="texto01">
-                        <div class="texto">
-                            <p>Olá, meu nome é Pedro, tenho 17 anos e estou no último ano do curso técnico em
-                                informática para web. Pretendo me formar como desenvolvedor de aplicativos, uma área
-                                pela qual sonho desde pequeno. Meu objetivo é trabalhar em uma empresa multinacional.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </aside>
-
-    <section>
-        <div class="Skills">
-            <div class="skills-title">
-                <h1>--Me Skills--</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque beatae excepturi quam sint incidunt,
-                    officiis accusantium ipsa minus facere.
-                </p>
-            </div>
-            <div class="row">
-                <section class="col">
-                    <div class="sub-title">
-                        <h2>Progamming Skills</h2>
-                    </div>
-                    <div class="skills-container">
-                        <div class="skil">
-                            <div class="subject">HTML</div>
-                            <div class="progress-bar" value="83%">
-                                <div class="progress-line" style="max-width: 83%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="skil">
-                            <div class="subject">CSS</div>
-                            <div class="progress-bar" value="90%">
-                                <div class="progress-line" style="max-width: 90%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="skil">
-                            <div class="subject">JavaScript</div>
-                            <div class="progress-bar" value="50%">
-                                <div class="progress-line" style="max-width: 50%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="skil">
-                            <div class="subject">PHP</div>
-                            <div class="progress-bar" value="70%">
-                                <div class="progress-line" style="max-width: 70%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-
-
-                <section class="col">
-                    <div class="sub-title">
-                        <h2>Designing Skills</h2>
-                    </div>
-                    <div class="skills-container">
-                        <div class="skil">
-                            <div class="subject">Photoshop</div>
-                            <div class="progress-bar" value="90%">
-                                <div class="progress-line" style="max-width: 90%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="skil">
-                            <div class="subject">Illustrator</div>
-                            <div class="progress-bar" value="74%">
-                                <div class="progress-line" style="max-width: 74%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="skil">
-                            <div class="subject">Figma</div>
-                            <div class="progress-bar" value="78%">
-                                <div class="progress-line" style="max-width: 78%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="skil">
-                            <div class="subject">Responsive Design</div>
-                            <div class="progress-bar" value="85%">
-                                <div class="progress-line" style="max-width: 85%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-
-            </div>
-        </div>
-    </section>
-
-    <!-- 4°-->
-    <section>>
-        <div class="container-services">
-            <h1>Services</h1>
-            <div class="container-cards">
-                <div class="cards">
-                    <img src="./icons/html.svg" alt="">
-                    <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web. A sigla significa
-                        Linguagem de Marcação de Hipertexto</p>
-                </div>
-                <div class="cards">
-                    <img src="./icons/csss.svg" alt="">
-                    <p>CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em
-                        uma linguagem de marcação como HTML.</p>
-                </div>
-                <div class="cards">
-                    <img src="./icons/js.svg" alt="">
-                    <p>O JavaScript é uma linguagem de programação de alto nível voltada para o desenvolvimento web,
-                        criada originalmente para funcionar nos navegadores.</p>
-                </div>
-                <div class="cards">
-                    <img src="./icons/python (2).svg" alt="">
-                    <p>O Python é uma linguagem de programação amplamente usada em aplicações da Web, desenvolvimento de
-                        software, ciência de dados e machine learning (ML)</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5°-->
-    <article>
-        <div class="container-article">
-            <h1>--Contact--</h1>
-            <div class="contact">
-                <form method="post" class="form">
-                    <label for="name">Nome</label> <br>
-                    <input type="text" nome="name"> <br> <br>
-
-                    <label for="email">Email</label> <br>
-                    <input type="text" name="email"> <br> <br>
-
-                    <label for="">Escreva sua mensagem</label> <br>
-                    <textarea name="textarea" id="" cols="50" rows="10"></textarea> <br> <br>
-                    <button id="btn-form">Subimit</button>
-                </form>
-                <div class="contact02">
-                    <div class="box-contact">
-                        <img src="./icons/email (2).svg" alt="">
-                        <h1>Email</h1>
-                        <p>00001126410706sp@al.educacao. <br> sp.gov .br</p>
-                    </div>
-                    <div class="box-contact">
-                        <img src="./icons/telefone.svg" alt="">
-                        <h1>Telefone</h1>
-                        <p>00 00000-0000</p>
-                    </div>
-                    <div class="box-contact">
-                        <img src="./icons/localizacao.svg" alt="">
-                        <h1>Localização</h1>
-                        <p>Av.6 carijó 939</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </article>
-
+   
     <!-- 6°-->
     <footer>
         <div class="footer-conteiner">
@@ -269,6 +84,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./app.js"></script>
 </body>
 
 </html>
