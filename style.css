@@ -210,6 +210,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 .info-card{
     width: 20%;
@@ -315,7 +316,7 @@ main {
 .about-img{
     border: 2px solid red;
     height: 350px;
-    width: 300px;
+    width: 330px;
 }
 .conteudo-about2{
     height: 60vh;
@@ -353,7 +354,7 @@ main {
     display: flex;
     justify-content:first baseline;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
 }
 @media (max-width: 768px) {
     .container-about {
@@ -420,7 +421,7 @@ main {
 
 
 
-/* 
+
 .Skills {
     width: 100%;
     min-height: 100vh;
@@ -565,8 +566,9 @@ main {
     background: var(--primeira-cor);
 }
 
+/* footer */
 footer {
-    min-height: 50vh;
+    min-height: 40vh;
     background: var(--primeira-cor);
     width: 100%;
     padding: 20px;
@@ -694,4 +696,4 @@ footer {
     footer {
         min-height: 26vh;
     }
-} */
+} 
