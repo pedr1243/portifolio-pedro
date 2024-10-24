@@ -11,7 +11,7 @@
 :root {
     --primeira-cor: #000000;
     --segunda-cor: #000268;
-    --terceira-cor: rgb(0, 202, 202);
+    --terceira-cor: #00caca;
     --quarta-cor: #f3f3f3;
     --opcional-cor: #ffffff;
 }
@@ -295,8 +295,132 @@ main {
 }
 
 /* about me */
+.section-about{
+    margin-top: 30px;
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+}
+.container-about{
+    height: 60vh;
+    display: flex;
+}
+.conteudo-about1{
+    height: 60vh;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.about-img{
+    border: 2px solid red;
+    height: 350px;
+    width: 300px;
+}
+.conteudo-about2{
+    height: 60vh;
+    width: 60%;
+    text-align: start;
+    padding: 20px;
+}
+.conteudo-about2 h1{
+    color: var(--segunda-cor);
+    font-size: 40px;
+}
+.conteudo-about2 span{
+    color: var(--terceira-cor);
+}
+.conteudo-about2 h3{
+    color: #000268;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.conteudo-about2 p{
+    color: #000000;
+    font-size: 18px;
+}
+.tates{
+    margin-top: 60px;
+    height: 17vh;
+    text-align: start;
+}
+.tates h1{
+    font-size: 20px;
+}
+.interests{
+    margin-top: 10px;
+    height: 70px;
+    display: flex;
+    justify-content:first baseline;
+    align-items: center;
+    gap: 50px;
+}
+@media (max-width: 768px) {
+    .container-about {
+        flex-direction: column;
+        height: auto;
+    }
 
-/* skills */
+    .conteudo-about1, .conteudo-about2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .conteudo-about2 h1 {
+        font-size: 30px;
+    }
+
+    .conteudo-about2 p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .conteudo-about2 h1 {
+        font-size: 24px;
+    }
+
+    .conteudo-about2 p {
+        font-size: 14px;
+    }
+
+    .tates{
+        text-align: start;
+    }
+    .interests {
+     display: flex;
+     align-items: center;
+     justify-content: start;
+     gap: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .Skills {
     width: 100%;
     min-height: 100vh;
@@ -570,4 +694,4 @@ footer {
     footer {
         min-height: 26vh;
     }
-}
+} */
