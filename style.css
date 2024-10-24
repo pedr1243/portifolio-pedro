@@ -568,7 +568,7 @@ main {
 
 /* footer */
 footer {
-    min-height: 40vh;
+    min-height: 50vh;
     background: var(--primeira-cor);
     width: 100%;
     padding: 20px;
@@ -630,7 +630,7 @@ footer {
     content: ' ';
     height: 0.1875rem;
     width: 0px;
-    background-color: #ffc300;
+    background-color: var(--terceira-cor);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -649,9 +649,9 @@ footer {
     transition: 0.3s ease
 }
 
-.coll .social a i:hover {
+.coll .social :hover i {
     transform: scale(1.5);
-    filter: grayscale(25);
+    color: var(--terceira-cor);
 }
 
 .coll .links a {
@@ -670,7 +670,7 @@ footer {
     position: absolute;
     top: 2px;
     left: -10px;
-    background-color: #ffc300;
+    background-color: var(--terceira-cor);
     transition: 0.5s ease;
     opacity: 0;
 }
@@ -681,7 +681,7 @@ footer {
 
 .coll .links a:hover {
     transform: translateX(-0.5rem);
-    color: #ffc300;
+    color: var(--terceira-cor);
 }
 
 .coll .contact-details {
@@ -691,6 +691,19 @@ footer {
 .coll .contact-details i {
     margin-right: 15px;
 }
+.footer-bottom {
+    background-color: var(--segunda-cor);
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: var(--opcional-cor);
+    margin-top: 90px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
 
 @media screen and (max-width:768px) {
     footer {
